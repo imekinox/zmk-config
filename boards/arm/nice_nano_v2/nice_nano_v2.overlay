@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
 &spi1 {
     status = "okay";
@@ -12,7 +13,7 @@
     pinctrl-0 = <&spi1_default>;
     pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>; // Use pro_micro pin reference
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>; // D1 = P0.06
 };
 
 &pinctrl {
