@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/gpio/gpio.h>
+
 &spi1 {
     status = "okay";
     compatible = "nordic,nrf-spim";
